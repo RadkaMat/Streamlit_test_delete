@@ -1,0 +1,9 @@
+Stáhni si soubor athletes z:
+https://raw.githubusercontent.com/ENGETO-Academy/Linux-public/main/files/athletes
+Soubor obsahuje údaje o sportovcích. Namátkově projdi obsah, ať chápeš jeho strukturu.
+Najdi odpovědi na následující otázky:
+1) Kterých 5 států mělo nejvíce účastníků?
+2) Kolik žen a kolik mužů se účastnilo?
+3) Který stát měl nejvíce plavců (M) a který měl nejvíce plavkyň (F)? (případně více států v případě shody)
+4) Kolik druhů sportů, které obsahují slovo "ball" je v souboru?
+5) Který sportovec má na počet znaků nejdelší jméno a z jakého je státu?
