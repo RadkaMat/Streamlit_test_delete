@@ -16,12 +16,12 @@ test_list = ['first', 'second', 'third']
 
 st.title("Big Title")
 
-form = st.form('Checking form', clear_on_submit=True)
-with form:
+form1 = st.form('Checking form', clear_on_submit=True)
+with form1:
   for index, item in enumerate(test_list):
-    checkbox_state[item] = st.checkbox(label=item, key=index)
-    if checkbox_state[item]:
+    checkbox1 = st.checkbox(label=item, key=index)
+    if checkbox1:
         test_list.pop(index)
         st.rerun
-  confirm = form.form_submit_button('Done')
+  confirm = form1.form_submit_button('Done')
   
