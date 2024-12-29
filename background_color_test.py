@@ -19,9 +19,9 @@ st.title("Big Title")
 form1 = st.form('Checking form', clear_on_submit=True)
 with form1:
   for index, item in enumerate(test_list):
-    checkbox1 = st.checkbox(label=item, key=index)
-    if checkbox1:
+    check['item'] = st.checkbox(label=item, key=index)
+    if check['item']:
         test_list.pop(index)
-        st.rerun
+        
   confirm = form1.form_submit_button('Done')
   
