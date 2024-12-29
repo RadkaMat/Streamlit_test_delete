@@ -20,7 +20,7 @@ form = st.form('Checking form', clear_on_submit=True)
 with form:
   for index, item in enumerate(test_list):
     checkbox_state[item] = st.checkbox(label=item, key=index)
-      if checkbox_state[item]:
+    if checkbox_state[item]:
         test_list.pop(index)
         st.rerun
   confirm = form.form_submit_button('Done')
