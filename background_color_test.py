@@ -12,15 +12,11 @@ PAGE_BG_STYLE = """
 }
 </style>
 """
+TEXT = """
+NameError: This app has encountered an error. The original error message is redacted to prevent data leaks. Full error details have been recorded in the logs (if you're on Streamlit Cloud, click on 'Manage app' in the lower right of your app).
+"""
 
 st.title("Big Title")
 
-form1 = st.form('Checking form', clear_on_submit=True)
-with form1:
-    check = st.checkbox(label='Check the button', key='check')
-    confirmed = form1.form_submit_button('Done')
-    if check and confirmed:
-        st.write('Good job!')
-    else:
-        st.write('Check the button, plese.')
+st.write(TEXT)
       
