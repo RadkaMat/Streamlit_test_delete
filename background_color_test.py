@@ -18,10 +18,9 @@ st.title("Big Title")
 form1 = st.form('Checking form', clear_on_submit=True)
 with form1:
     check = st.checkbox(label='Check the button', key='check')
-    if check:
-        st.write('Click to Done button.')
-        
     confirmed = form1.form_submit_button('Done')
     if check and confirmed:
-       st.write('Good job!')
+        st.write('Good job!')
+    else:
+        st.write('Check the button, plese.')
       
