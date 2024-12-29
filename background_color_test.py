@@ -12,16 +12,16 @@ PAGE_BG_STYLE = """
 }
 </style>
 """
-test_list = ['first', 'second', 'third']
 
 st.title("Big Title")
 
 form1 = st.form('Checking form', clear_on_submit=True)
 with form1:
-  for index, item in enumerate(test_list):
-    check['item'] = st.checkbox(label=item, key=index)
-    if check['item']:
-        test_list.pop(index)
+    check = st.checkbox(label='Check the button', key='check')
+    if check:
+        st.write('Click to Done button.')
         
-  confirm = form1.form_submit_button('Done')
-  
+    confirmed = form1.form_submit_button('Done')
+    if check and confirmed:
+       st.write('Good job!')
+      
