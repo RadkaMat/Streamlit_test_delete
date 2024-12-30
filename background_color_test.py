@@ -9,7 +9,7 @@ PAGE_BG_STYLE = """
     background-size: cover;
 }
 [data-testid="stAppViewBlockContainer"] {
-    background-color: #262626;
+    background-color: #262730;
 }
 </style>
 """
